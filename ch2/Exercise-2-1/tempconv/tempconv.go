@@ -1,6 +1,7 @@
-// Package tempconv performs Celsius 、Fahrenheit and Kelvin conversions.
-// Exercise 2.1: Add typ es, cons tants, and functions to tempconv for pro cessing temperatures in
-// the Kelvin scale, where zero Kelvin is −273.15°C andadif ference of 1K has the same mag nitude as 1°C.
+// Package tempconv ...
+// Exercise 2.1: Add types, constants, and functions to tempconv for processing temperatures
+// in the Kelvin scale, where zero Kelvin is −273.15°C and a difference of 1K has the same
+// magni- tude as 1°C.
 package tempconv
 
 import "fmt"

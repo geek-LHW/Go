@@ -1,6 +1,6 @@
-// Exercise 1.11: Tr y fetchall with lon g er argument lists, such as samples fro m the top million
-// we b sites avai lable at alexa.com. How does the program beh ave if a we b site just doesn’t
-// resp ond? (Section 8.9 descr ibes mechanisms for coping in such cas es.)
+// Exercise 1.11: Try fetchall with longer argument lists, such as samples from the top
+// million web sites available at alexa.com. How does the program behave if a web site
+// just doesn’t respond?  (Section 8.9 describes mechanisms for coping in such cases.)
 package main
 
 import (

@@ -1,6 +1,7 @@
-// Exercise 1.7: The function cal l io.Copy(dst, src) re ads fro m src and writes to dst. Use it
-// instead of ioutil.ReadAll to copy the respons e body to os.Stdout without requir ing a
-// buffer large enough to hold the ent ire stream. Be sure to che ck the error result of io.Copy.
+// Exercise 1.7: The function call io.Copy(dst, src) reads from src and writes to dst.
+// Use it instead of ioutil.ReadAll to copy the response body to os.Stdout without
+// requiring a buffer large enough to hold the entire stream. Be sure to check the error
+// result of io.Copy.
 package main
 
 import (

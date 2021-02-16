@@ -1,6 +1,7 @@
-// Exercise 1.12: Mo dif y the Lissajous ser ver to read parameter values fro m the URL. For example, you mig ht arrange it so thataURL like http://localhost:8000/?cycles=20 sets the
-// numb er of cyc les to 20 ins tead of the defau lt 5. Use the strconv.Atoi func tion to convert the
-// st ring parameter into an int eger. You can see its document ation wit h go doc strconv.Atoi.
+// Exercise 1.12: Modify the Lissajous server to read parameter values from the URL.
+// For exam- ple, you might arrange it so that a URL like http://localhost:8000/?cycles=20
+// sets the number of cycles to 20 instead of the default 5. Use the strconv.Atoi function to
+// convert the string parameter into an integer.You can see its documentation with go doc strconv.Atoi
 package main
 
 import (

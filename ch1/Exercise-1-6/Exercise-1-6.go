@@ -1,5 +1,6 @@
-// Exercise 1.6: Mo dif y the Lissajous program to pro duce images in multiple color s by adding
-// more values to palette and then displ aying them by chang ing the third argument of SetColorIndex in som e interest ing way
+// Exercise 1.6: Modify the Lissajous program to produce images in multiple colors
+// by adding more values to palette and then displaying them by changing the third
+// argument of Set- ColorIndex in some interesting way.
 package main
 
 import (

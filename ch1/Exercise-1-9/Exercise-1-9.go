@@ -1,4 +1,4 @@
-// Exercise 1.9: Mo dif y fetch to als o pr int the HTTP statu s co de, found in resp.Status.
+// Exercise 1.9: Modify fetch to also print the HTTP status code, found in resp.Status.
 package main
 
 import (
