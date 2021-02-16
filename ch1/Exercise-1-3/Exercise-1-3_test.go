@@ -1,5 +1,6 @@
-// 练习 1.3： 做实验测量潜在低效的版本和使用了strings.Join的版本的运行时间差异。
-//（1.6节讲解了部分time包，11.4节展示了如何写标准测试程序，以得到系统性的性能评测。）
+// Exercise 1.3: Experiment to measure the dif ference in running time bet ween our pot ent ial ly
+// inefficient versions and the one that uses strings.Join. (Section 1.6 illustrates par t of the
+// time package, and Sec tion 11.4 shows how to write benchmark tests for systematic performance evaluation.)
 package main
 
 import (

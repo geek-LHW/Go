@@ -1,4 +1,4 @@
-// 练习 1.9： 修改fetch打印出HTTP协议的状态码，可以从resp.Status变量得到该状态码。
+// Exercise 1.9: Mo dif y fetch to als o pr int the HTTP statu s co de, found in resp.Status.
 package main
 
 import (

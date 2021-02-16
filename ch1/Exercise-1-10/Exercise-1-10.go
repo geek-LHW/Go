@@ -1,6 +1,7 @@
-// 练习 1.10： 找一个数据量比较大的网站，用本小节中的程序调研网站的缓存策略，
-// 对每个URL执行两遍请求，查看两次时间是否有较大的差别，并且每次获取到的响应内容是否一致，
-// 修改本节中的程序，将响应结果输出，以便于进行对比。
+// Exercise 1.10: Findaweb sit e that pro duces a large amount of dat a. Invest igate caching by
+// running fetchall twice in succession to see whether the rep orted time changes much. Do
+// you get the same content each time? Modif y fetchall to print its out put to a file so it can be
+// examined
 package main
 
 import (

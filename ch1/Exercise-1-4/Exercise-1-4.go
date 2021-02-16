@@ -1,4 +1,4 @@
-// 练习 1.4： 修改dup2，出现重复的行时打印文件名称。
+// Exercise 1.4: Mo dif y dup2 to print the names of all files in which each dup lic ated line occ urs.
 package main
 
 import (

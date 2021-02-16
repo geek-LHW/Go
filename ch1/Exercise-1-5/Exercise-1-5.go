@@ -1,7 +1,6 @@
-// 练习 1.12： 修改Lissajour服务，从URL读取变量，
-// 比如你可以访问 http://localhost:8000/?cycles=20 这个URL，
-// 这样访问可以将程序里的cycles默认的5修改为20。
-// 字符串转换为数字可以调用strconv.Atoi函数。你可以在godoc里查看strconv.Atoi的详细说明。
+// Exercise 1.5: Change the Lissajous program’s color palette to gre en on black, for adde d
+// authenticity. To cre ate the web color #RRGGBB, use color.RGBA{0xRR, 0xGG, 0xBB, 0xff},
+// where each pair of hexade cimal digits represents the int ensit y of the red, gre en, or blue component of the pixel.
 package main
 
 import (
@@ -9,34 +8,30 @@ import (
 	"image/color"
 	"image/gif"
 	"io"
-	"log"
 	"math"
 	"math/rand"
-	"net/http"
-	"strconv"
+	"os"
+	"time"
 )
 
-var palette = []color.Color{color.White, color.Black}
+var palette = []color.Color{color.White, color.RGBA{0, 255, 0, 1}}
 
 const (
 	whiteIndex = 0 // first color in palette
-	blackIndex = 1 // next color in palette
+	greenIndex = 1 // next color in palette
 )
 
 func main() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		lissajous(w, r)
-	})
-	log.Fatal(http.ListenAndServe("localhost:8000", nil))
+	// The sequence of images is deterministic unless we seed
+	// the pseudo-random number generator using the current time.
+	// Thanks to Randall McPherson for pointing out the omission.
+	rand.Seed(time.Now().UTC().UnixNano())
+	lissajous(os.Stdout)
 }
 
-func lissajous(out io.Writer, r *http.Request) {
-
-	cycles := 5.0 // number of complete x oscillator revolutions
-	for _, v := range r.Form {
-		cycles, _ = strconv.ParseFloat(v[0], 64)
-	}
+func lissajous(out io.Writer) {
 	const (
+		cycles  = 5     // number of complete x oscillator revolutions
 		res     = 0.001 // angular resolution
 		size    = 100   // image canvas covers [-size..+size]
 		nframes = 64    // number of animation frames
@@ -53,7 +48,7 @@ func lissajous(out io.Writer, r *http.Request) {
 			x := math.Sin(t)
 			y := math.Sin(t*freq + phase)
 			img.SetColorIndex(size+int(x*size+0.5), size+int(y*size+0.5),
-				blackIndex)
+				greenIndex)
 		}
 		phase += 0.1
 		anim.Delay = append(anim.Delay, delay)

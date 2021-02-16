@@ -1,5 +1,6 @@
-// 练习 1.11： 在fetchall中尝试使用长一些的参数列表，比如使用在alexa.com的上百万网站里排名靠前的。
-// 如果一个网站没有回应，程序将采取怎样的行为？（Section8.9 描述了在这种情况下的应对机制）。
+// Exercise 1.11: Tr y fetchall with lon g er argument lists, such as samples fro m the top million
+// we b sites avai lable at alexa.com. How does the program beh ave if a we b site just doesn’t
+// resp ond? (Section 8.9 descr ibes mechanisms for coping in such cas es.)
 package main
 
 import (

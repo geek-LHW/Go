@@ -1,4 +1,5 @@
-// 练习 1.2： 修改echo程序，使其打印每个参数的索引和值，每个一行。
+// Exercise 1.2: Mo dif y the echo prog ram to print the index and
+// value of each of its arguments,on e per line.
 package main
 
 import (

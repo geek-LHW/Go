@@ -1,5 +1,5 @@
-// 练习 1.6： 修改Lissajous程序，修改其调色板来生成更丰富的颜色，
-// 然后修改SetColorIndex的第三个参数，看看显示结果吧。
+// Exercise 1.6: Mo dif y the Lissajous program to pro duce images in multiple color s by adding
+// more values to palette and then displ aying them by chang ing the third argument of SetColorIndex in som e interest ing way
 package main
 
 import (

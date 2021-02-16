@@ -1,4 +1,5 @@
-// 练习 1.1： 修改echo程序，使其能够打印os.Args[0]，即被执行命令本身的名字。
+// Exercise 1.1: Mo dif y the echo prog ram to als o pr int os.Args[0],
+// the name of the command that invo ked it
 package main
 
 import (
